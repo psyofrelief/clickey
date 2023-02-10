@@ -1,0 +1,68 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  animation: pageLoad 0.7s;
+  background-color: whitesmoke;
+
+  main {
+    position: relative;
+  }
+}
+
+Header {
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+
+  img {
+    max-width: 700px;
+    min-height: auto;
+    margin: 0 auto;
+  }
+
+  button {
+    position: absolute;
+    bottom: 2em;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 0.8em 0;
+    &:hover {
+      background-color: #31572c;
+    }
+    a {
+      color: whitesmoke;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.header-heading {
+  color: whitesmoke;
+  font-size: 4rem;
+  z-index: 1;
+  position: absolute;
+  bottom: 50%;
+  font-family: "Cabin", sans-serif;
+  font-weight: 900;
+  text-shadow: 1px 1px 20px black;
+}
+
+@media screen and (max-width: 700px) {
+  .header-img {
+    margin: 0 40px;
+    max-width: 500px;
+  }
+
+  .header-heading {
+    position: relative;
+    font-size: 2rem;
+    margin: 0.3em auto;
+    text-align: center;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,78 @@
+.catalogue-switches {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  animation: pageLoad 0.7s;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  & main {
+    padding: 2rem;
+    position: relative;
+  }
+
+  .cont-filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1em;
+    gap: 1em;
+    .highlight {
+      background-color: #ecf39e;
+      color: #132a13;
+    }
+    & button {
+      border-radius: 3px;
+      border: 2px solid black;
+      background-color: #132a13;
+      color: #ecf39e;
+      padding: 0.7em 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      &:focus {
+        outline: 3px solid #b73a45;
+      }
+    }
+  }
+
+  .cont-switch-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    .catalogue-item-switch {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+    }
+
+    & button {
+      margin-top: auto;
+    }
+
+    & img {
+      margin-top: 1em;
+      max-width: 7rem;
+    }
+  }
+
+  & footer {
+    margin-top: auto;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 1;
+}

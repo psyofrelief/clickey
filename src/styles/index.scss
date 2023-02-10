@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Poppins:wght@300;400;600;800&family=Sofia+Sans:wght@300;500;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  font-family: "Sofia Sans", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  background-color: #4f772d;
+  color: whitesmoke;
+  text-align: center;
+  padding: 0.4em 0;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  background-color: #31572c;
+  color: #ecf39e;
+  padding: 0.2em 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0.3em 0;
+
+  color: #132a13;
+}
+
+.item-name {
+  color: #132a13;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 0.2em;
+  z-index: 4;
+  &:focus {
+    outline: 3px solid #132a13;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input:focus {
+  outline: 3px solid #b73a45;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #132a13;
+  animation: menu 0.1s ease-out;
+  position: absolute;
+  z-index: 7;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+.cont-menu-links {
+  padding: 2em 1em;
+
+  a {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #132a13;
+    text-align: center;
+    padding: 1.5em 0;
+    border-top: 1px solid;
+    background-color: white;
+    letter-spacing: 0.2ch;
+    &:last-child {
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+@keyframes pageLoad {
+  0% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
