@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/clickey/static/css/main.f48219f7.css",
+    "main.js": "/clickey/static/js/main.caf1e809.js",
+    "static/media/Untitled.png": "/clickey/static/media/Untitled.bdfd06e8f2f4c0f6ccef.png",
+    "index.html": "/clickey/index.html",
+    "main.f48219f7.css.map": "/clickey/static/css/main.f48219f7.css.map",
+    "main.caf1e809.js.map": "/clickey/static/js/main.caf1e809.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f48219f7.css",
+    "static/js/main.caf1e809.js"
+  ]
+}
