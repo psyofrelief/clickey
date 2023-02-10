@@ -1,0 +1,13 @@
+import React from "react";
+
+const Menu = (props) => {
+  return (
+    <div className={`menu ${visibility.menu}`}>
+      <div className="cont-menu-links">
+        <a href=".">Home</a>
+        <a href=".">Switches</a>
+        <a href=".">Keycaps</a>
+      </div>
+    </div>
+  );
+};

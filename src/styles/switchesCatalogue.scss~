@@ -1,0 +1,4 @@
+.catalogue-switches {
+  display: flex;
+  flex-direction: column;
+}
